@@ -1,0 +1,126 @@
+/* Good Practice for color file: Whenever you apply color to an element, also specify background color
+ * ... otherwise accidentally some text may become invisible
+ */
+ 
+body {
+  color: #fb5;
+  background-color: #334;
+}
+
+a:link {
+  color: #445;
+  background-color: #eb6;
+}
+a:visited {
+  color: #345;
+  background-color: #eb6;
+}
+a:hover {
+  color: #667;
+  background-color: #fb5;
+}
+a:active {
+  color: #778;
+  background-color: #ec8;
+}
+
+header {
+  color: #ec8;
+  background-color: #334;
+  border-color: #667;
+}
+
+header nav {
+  color: #455;
+  background-color: #789;
+  border-color: #667;
+}
+
+header nav ul {
+  border-color: #99a;
+}
+
+header nav a:link,
+header nav a:visited
+{
+  color: #eef;
+  background-color: transparent;
+  border-color: #99a;
+}
+
+header nav a:hover {
+  color: #445;
+  background-color: #eb6;
+}
+header nav a:active {
+  color: #667;
+  background-color: #ec8;
+}
+
+article {
+  color: #223;
+  background-color: #edc;
+  border-color: #667;
+}
+
+article img {
+  border-color: #ba9;
+  outline-color: #dcb;
+}
+/*======We choose to use JS to create class on the fly....
+ * Styles for a class = "here" <header><nav> =======*/
+header nav a.here:link,
+header nav a.here:visited,
+header nav a.here:hover,
+header nav a.here:active
+	{	color: #eef;
+		background-color: #799;
+	}
+
+/* for live.html itinerary */
+th {	/* table header */
+  color: #edc;	/* whitish */
+  background-color: #455;	/* darkish UN blue almost grey */ 
+}
+
+tr td {
+	background-color: #223;	/* bluish color of row and cell background */
+  	color: #eb6;  /* goldenish color of text */
+}
+
+/* Add color info for 'odd' class */
+tr.odd td {
+  color: #223;	
+  background-color: #ec8;
+}
+
+/* Add color info for 'highlight' class */
+tr.highlight td {
+  /* color: #223;	bluish color of of text */
+  color: #f00;	/* how about I use red does it scream to much? */
+  background-color: #cba;	/* greyish background */
+  /* font-weight: bold;  THIS ONE WAS MINE - commenting cause it creates uncomfotable movement of table when bold words 'expand'! */
+}
+
+/* for contact.html */
+/* we created a class on the run in contact.js to allow for styling */
+input.placeholder {	
+			/* color:grey */ 
+			color:blue
+		  }
+
+/* Support for CSS pseudo-classes is patchy e.g. when styling for events...
+   For example this works in firefox but not in all browsers. e.g. in my IE9.0! */
+   
+/* Bold text in any table row whenever it is moused over */
+/*tr:hover { font-weight: bold; }*/
+
+/*======KK=======*/
+/*ul {
+  color: #455;
+  background-color: #789;
+  border-color: #667;
+}
+*/
+
+
