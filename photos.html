@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>The Million Shilling Webpage</title>
+  <script src="includes/js/modernizr-2.6.2.min.js"></script>
+  <script src="includes/js/jquery-1.5.1.min.js"></script>
+  <!---STOP-PRESS: You can put just one CSS file here and 'imported' the others style sheets to it!--->
+  <link type="text/css" rel="stylesheet" href="includes/css/basic.css" media="screen" />
+</head>
+<body>
+  <header>
+  <h1>THE LAND OF TWITPIC</h1>
+    <img src="includes/images/logo.jpg" alt="The Million Shilling Webpage Band" />
+    <nav>
+		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="about.html">About</a></li>
+		  <li><a href="photos.html">Photos</a></li>
+		  <li><a href="live.html">Tours</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+  </header>
+  <article>
+  	<!--- This part of the document - <article> element - is what changes from page to page  --->
+  	<!--- As it changes ensure <nav> is in tandem ie if you are on index.html then no link for same in <nav>!  --->
+	<h1>My TwitPic Gallery</h1>
+	<ul id ="imagegallery">
+		<li><a href="includes/images/photos/thumbnail_734306540.jpg" title="Laptop">
+			<img src="includes/images/photos/mini_734306540.jpg" alt="Laptop" />
+		</a></li>
+		<li><a href="includes/images/photos/thumbnail_738295354.jpg" title="Cold drink" >
+			<img src="includes/images/photos/mini_738295354.jpg" alt="Cold drink" />
+		</a></li>
+		<li><a href="includes/images/photos/thumbnail_738336819.jpg" title="Tough guy" >
+			<img src="includes/images/photos/mini_738336819.jpg" alt="Tough guy" />
+		</a></li>
+		<li><a href="includes/images/photos/thumbnail_738635584.jpg" title="KickStart" >
+			<img src="includes/images/photos/mini_738635584.jpg" alt="KickStart" />
+		</a></li>
+		<li><a href="includes/images/photos/thumbnail_755711736.jpg" title="myCar" >
+			<img src="includes/images/photos/mini_755711736.jpg" alt="myCar" />
+		</a></li>
+	</ul>
+  </article>
+  <!--- All common functions lumped into file below because of performance considerations --->
+  <script type="text/javascript" src="includes/js/global.js"></script>
+  <script type="text/javascript" src="includes/js/photos.js"></script>
+  <!---script type="text/javascript" src="includes/js/home.js" NICE USES A CUSTOMIZED 'FRAME'--->
+
+</html>
