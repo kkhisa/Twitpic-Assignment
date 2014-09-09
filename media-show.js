@@ -17,7 +17,7 @@ twitPic.users.show({'username':'kkhisa'}, function (user) {
 		image_id = user.images[imagesCounter].id ;
 		image_type = user.images[imagesCounter].type ; 
 		path = "http://twitpic.com/show/thumb/" + user.images[imagesCounter].short_id ;
-		url =  "<img style=\"width: 100px; margin: 5px;\" src=" + path + " />" ; 
+		url =  "<img style=\"width: 400px; margin: 5px;\" src=" + path + " />" ; 
 	 	genDiv = "<span id=user_image" + imagesCounter + ">" + url + "</span>" ;
 		$("#gallery").append(genDiv) ;
 
