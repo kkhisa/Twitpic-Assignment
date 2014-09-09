@@ -12,15 +12,13 @@ var gallery = document.getElementById("gallery") ;
 
 twitPic.users.show({'username':'kkhisa'}, function (user) {
 	
-	for (imagesCounter = 0 ;  imagesCounter < user.images.length ; imagesCounter++) {
+	for (imagesCounter = 0 ;  imagesCounter < user.images.length ; imagesCounter++) 
+	{
 		image_id = user.images[imagesCounter].id ;
 		image_type = user.images[imagesCounter].type ; 
 		path = "http://twitpic.com/show/thumb/" + user.images[imagesCounter].short_id ;
-		url = 
-	 "<img style=\"width: 100px; margin: 5px;\" src=" + path + " />" ; 
-	 	genDiv = "<span id=user_image" + imagesCounter + ">"
-			  + url 
-			  + "</span>" ;
+		url =  "<img style=\"width: 100px; margin: 5px;\" src=" + path + " />" ; 
+	 	genDiv = "<span id=user_image" + imagesCounter + ">" + url + "</span>" ;
 		$("#gallery").append(genDiv) ;
 
 		$.post(
