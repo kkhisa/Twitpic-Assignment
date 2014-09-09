@@ -10,7 +10,7 @@ twitPic.config(function (config) {
 */
 var gallery = document.getElementById("gallery") ; 
 
-twitPic.users.show({'username':'meltingice'}, function (user) {
+twitPic.users.show({'username':'kkhisa'}, function (user) {
 	
 	for (imagesCounter = 0 ;  imagesCounter < user.images.length ; imagesCounter++) {
 		image_id = user.images[imagesCounter].id ;
