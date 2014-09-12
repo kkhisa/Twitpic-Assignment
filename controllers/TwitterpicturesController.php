@@ -8,7 +8,7 @@ class TwitterpicturesController
 		$images = array() ; 
 		$picID = @$request->url_elements[3] ;
 		$loadImages = new Images($pathToImages) ;		
-		$requiredImages = array_slice($loadImages->getImages(), 1, -2) ; 
+		$requiredImages = array_slice($loadImages->getImages(), 24, -2) ; 
 			
         if(isset($picID)) {
 			for ($i = 0; $i < $requiredImages; $i++ ) {
