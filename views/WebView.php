@@ -10,7 +10,7 @@ class WebView extends ApiView {
 		$result .= '<script src="http://'.$path.'/includes/js/modernizr-2.6.2.min.js"></script>'
 					.'<script src="http://'.$path.'/includes/js/jquery.js"></script>'
 					.'<script src="http://'.$path.'/includes/js/global.js" type="text/javascript"></script>'
-					.'<script src="http://'.$path.'/custom-show.js"></script>'
+					.'<script src="http://'.$path.'/restful-show.js"></script>'
 					.'<link media="screen" href="http://'.$path.'/includes/css/basic.css" rel="stylesheet" type="text/css">' ;
 					
 		$result .= '<ul id="imagegallery">' ;
