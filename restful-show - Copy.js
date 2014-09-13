@@ -19,7 +19,7 @@ function preparePlaceholder()
 	// Insert image/paragraph nodes into document
 	// OPTED: in this case looks better if description text is placed above placeholder image
 	var ul_object = document.getElementById("imagegallery");
-	insertAfter(p_object, ul_object);  
+	insertAfter(p_object, ul_object);
 	insertAfter(placeholder, p_object);
 	
 	// N.B: MORE THAN ONE WAY TO ADD NODES TO DOM 
@@ -57,9 +57,7 @@ function showPic(whichPic)
 	if (!document.getElementById("placeholder")) return false;	
 	
 	// TEST: <Element> must exists as an <IMG> coz src attribute needs to be replaced
-	if (document.getElementById("placeholder").nodeName != "IMG") return false;  //N.B. nodeName returns upper-case value!
-	
-	// All this code lives just for this next line - MOTHER of all tricks!
+	if (document.getElementById("placeholder").nodeName != "IMG") return false;  //N.B. nodeName returns uppercase value!
 	document.getElementById("placeholder").setAttribute("src",url);	
 	
 	// Action: We have every link from gallery list having a title attribute. 
@@ -84,10 +82,6 @@ function showPic(whichPic)
 			// Usually you want this explicit if returned result will be used in calling program!
 }
 
-//When using a RESTful API, the URI means something else so we can't use relative paths
-//So I had to generate my placeholder in the PHP view - WebView.php
-//....so code function preparePlaceholder() is redundant in this JavaScript file
 
-//addLoadEvent(preparePlaceholder);
-
+addLoadEvent(preparePlaceholder);
 addLoadEvent(prepareGallery);

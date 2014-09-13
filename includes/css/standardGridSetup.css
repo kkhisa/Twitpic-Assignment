@@ -68,7 +68,7 @@ body {
   /* Many properties for background so we can use shorthand BUT order is important even if some properties missing!*/
   
   margin: 1em 10%;	/* top and bottom margins are 1em; right/left are 10% of width of containing element */
-  background-image: url(../images/zbackground.gif);	/* image to be used as background of the element*/
+  background-image: url(../images/background.gif);	/* image to be used as background of the element*/
   background-repeat: repeat-x;	/* image to be used as background of the element*/
   background-attachment: fixed;	/* image is fixed as opposed to scrolls with rest of page*/
   background-position: top left;	/* image should not disturb text or any other widget*/
